@@ -1,9 +1,13 @@
 manifest:
   remotes:
+    - name: benvallack
+      url-base: https://github.com/benvallack
     - name: slicemk
       url-base: https://github.com/slicemk
   projects:
     - name: zmk
+      remote: benvallack
+      revision: dongle
       remote: slicemk
       revision: main
       import: app/west.yml
